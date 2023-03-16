@@ -10,6 +10,7 @@
   --navy-blue-modal: #2e2f42;
   --grey: #2e2f42;
   --white: #fff;
+  --black: #000;
 }
 
 body {
@@ -23,7 +24,8 @@ h3,
 h4,
 h5,
 h6,
-p {
+p,
+b {
   margin-top: 0;
   margin-bottom: 0;
 }
@@ -56,6 +58,8 @@ address {
 
 .section {
   padding-bottom: 120px;
+  margin: 0 auto;
+  width: 1440px;
 }
 
 .portfolio-section {
@@ -118,6 +122,8 @@ address {
   background-color: var(--white);
   border-bottom: 1px solid var(--cornflower);
   padding: 24px 0;
+  margin: 0 auto;
+  width: 1440px;
 }
 
 /* ==== Header Logo ==== */
@@ -209,7 +215,18 @@ address {
 .studio-hero {
   background-color: var(--navy-blue);
   padding: 188px 0;
+  margin: 0 auto;
+  width: 1440px;
   text-align: center;
+
+  background-image: linear-gradient(
+      rgba(46, 47, 66, 0.7),
+      rgba(46, 47, 66, 0.7)
+    ),
+    url("/images/hero-bg.jpg");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: contain;
 }
 
 .main-btn {
@@ -252,6 +269,18 @@ address {
   margin-left: 24px;
 }
 
+.svg-studio-sect-one {
+  text-align: center;
+  padding: 24px 100px;
+  margin-bottom: 8px;
+  background-color: var(--cloud);
+}
+
+.sub-svg-studio-sect-one {
+  width: 64px;
+  height: 64px;
+}
+
 /* ==== Studio Section 2 ==== */
 
 .list-studio-sect-two {
@@ -287,8 +316,8 @@ address {
   background-color: var(--white);
   flex-basis: calc(100% / 4 - 24px);
 
-  box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16),
-    0px 2px 1px rgba(46, 47, 66, 0.08);
+  box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
+    0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
   border-radius: 0px 0px 4px 4px;
 
   margin-left: 24px;
@@ -297,6 +326,67 @@ address {
 .content-studio-sect-three {
   padding: 32px 16px;
   text-align: center;
+}
+
+.card-list-soc {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 16px;
+  margin-left: -16px;
+}
+
+.card-link-soc {
+  width: 40px;
+  height: 40px;
+  justify-content: center;
+  align-items: center;
+  background: var(--slate);
+  border-radius: 50%;
+  margin-left: 16px;
+  padding: 8px;
+}
+
+.card-link-soc:hover,
+.card-link-soc:focus {
+  background: var(--green);
+}
+
+.card-list-soc-item {
+  flex-basis: calc(100% / 4 - 16px);
+}
+
+.card-list-icon {
+  width: 24px;
+  height: 24px;
+}
+
+/* ++++ Studio Section 4 ++++ */
+
+.customers {
+  padding-top: 120px;
+}
+
+.customers-list {
+  display: flex;
+  flex-wrap: wrap;
+
+  margin-top: 72px;
+  margin-left: -24px;
+}
+
+.customers-item {
+  flex-basis: calc(100% / 6 - 24px);
+
+  margin-left: 24px;
+
+  outline: 1px solid var(--light-slate);
+  border-radius: 4px;
+}
+
+.customers-svg {
+  width: 168px;
+  height: 88px;
+  padding: 16px 32px;
 }
 
 /* ++++ Portfolio Section ++++ */
@@ -333,6 +423,13 @@ address {
   background-color: var(--ocean);
 }
 
+.portfolio-btn:hover,
+.portfolio-btn:focus {
+  color: var(--white);
+  background-color: var(--ocean);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+}
+
 /* ==== Portfolio Gallery ==== */
 
 .portfolio-list {
@@ -359,19 +456,80 @@ address {
   padding: 32px 16px;
 }
 
+.portfolio-item:hover {
+  box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
+    0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
+}
+
+.portfolio-item:hover .portfolio-item-thumb {
+  background-image: linear-gradient(var(--iris), var(--iris));
+}
+
 /* ++++ Footer ++++ */
+
+.footer-container {
+  display: flex;
+  flex-wrap: wrap;
+}
 
 .page-footer {
   background-color: var(--navy-blue-modal);
   padding-top: 100px;
   padding-bottom: 100px;
+  margin: 0 auto;
+  width: 1440px;
 }
 
-.footer-paragraph {
+.footer-content {
+  margin-right: 120px;
+}
+
+.footer-content-paragraph {
   color: var(--cornflower);
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
-  margin-top: 16px;
   width: 264px;
+
+  margin-top: 16px;
+}
+
+.footer-contacts-paragraph {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  color: var(--white);
+}
+
+.footer-list {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 16px;
+  margin-left: -16px;
+}
+
+.footer-link {
+  width: 40px;
+  height: 40px;
+  justify-content: center;
+  align-items: center;
+  background: var(--slate);
+  border-radius: 50%;
+  margin-left: 16px;
+  padding: 8px;
+}
+
+.footer-link:hover,
+.footer-link:focus {
+  background: var(--green);
+}
+
+.footer-contacts-item {
+  flex-basis: calc(100% / 4 - 16px);
+}
+
+.footer-icon {
+  width: 24px;
+  height: 24px;
 }
