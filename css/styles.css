@@ -111,7 +111,7 @@ address {
   margin-top: 8px;
 }
 
-/** ++++++++++++++++++++++++++++++++++++++ HEADER ++++ **/
+/** +++ HEADER +++++++++++++++++++++++++++++++++++++++ **/
 
 .page-header {
   background-color: var(--white);
@@ -120,7 +120,7 @@ address {
   margin: 0 auto;
 }
 
-/** ====================================== HEADER LOGOTYPE ==== **/
+/** === HEADER LOGOTYPE ======================================= **/
 
 .logo-link {
   font-family: "Raleway", sans-serif;
@@ -140,7 +140,7 @@ address {
   color: var(--cloud);
 }
 
-/** ====================================== HEADER NAVIGATION ==== **/
+/** === HEADER NAVIGATION ======================================= **/
 
 .main-menu {
   display: flex;
@@ -177,7 +177,7 @@ address {
   color: var(--ocean);
 }
 
-/** ====================================== HEADER ADDRESS ==== **/
+/** === HEADER ADDRESS ======================================= **/
 
 .address-menu {
   display: flex;
@@ -202,9 +202,9 @@ address {
   color: var(--ocean);
 }
 
-/** ++++++++++++++++++++++++++++++++++++++ STUDIO MAIN ++++ **/
+/** +++ STUDIO MAIN +++++++++++++++++++++++++++++++++++++++ **/
 
-/** ====================================== STUDIO SECTION HERO ==== **/
+/** === STUDIO SECTION HERO ======================================= **/
 
 .studio-hero {
   background-color: var(--navy-blue);
@@ -213,10 +213,7 @@ address {
   width: 1440px;
   text-align: center;
 
-  background-image: linear-gradient(
-      rgba(46, 47, 66, 0.7),
-      rgba(46, 47, 66, 0.7)
-    ),
+  background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
     url("../images/hero-bg.jpg");
   background-repeat: no-repeat;
   background-position: center center;
@@ -243,7 +240,7 @@ address {
   background: var(--ocean);
 }
 
-/** ====================================== STUDIO SECTION COMPONENTS ==== **/
+/** === STUDIO SECTION COMPONENTS ======================================= **/
 
 .studio-sect-one {
   padding-top: 120px;
@@ -279,7 +276,7 @@ address {
   height: 64px;
 }
 
-/** ====================================== STUDIO SECTION WORKS ==== **/
+/** === STUDIO SECTION WORKS ======================================= **/
 
 .list-studio-sect-two {
   display: flex;
@@ -295,7 +292,7 @@ address {
   margin-left: 24px;
 }
 
-/** ====================================== STUDIO SECTION OUR TEAM ==== **/
+/** === STUDIO SECTION OUR TEAM ======================================= **/
 
 .studio-sect-three {
   background-color: var(--cloud);
@@ -314,8 +311,8 @@ address {
   background-color: var(--white);
   flex-basis: calc(100% / 4 - 24px);
 
-  box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
-    0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
+  box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16),
+    0px 2px 1px rgba(46, 47, 66, 0.08);
   border-radius: 0px 0px 4px 4px;
 
   margin-left: 24px;
@@ -354,9 +351,10 @@ address {
 .card-list-icon {
   width: 16px;
   height: 16px;
+  fill: var(--white);
 }
 
-/** ====================================== STUDIO SECTION CUSTOMERS ==== **/
+/** === STUDIO SECTION CUSTOMERS ======================================= **/
 
 .customers {
   padding-top: 120px;
@@ -381,7 +379,8 @@ address {
 
   border: 1px solid var(--light-slate);
   border-radius: 4px;
-  fill: var(--light-slate);
+  color: var(--light-slate);
+
   width: 168px;
   height: 88px;
 }
@@ -389,17 +388,18 @@ address {
 .customers-link:hover,
 .customers-link:focus {
   border: 1px solid var(--ocean);
-  fill: var(--ocean);
+  color: var(--ocean);
 }
 
 .customers-svg {
   width: 104px;
   height: 56px;
+  fill: currentColor;
 }
 
-/** ++++++++++++++++++++++++++++++++++++++ PORTFOLIO SECTION ++++ **/
+/** +++ PORTFOLIO SECTION +++++++++++++++++++++++++++++++++++++++ **/
 
-/** ====================================== PORTFOLIO BUTTONS ==== **/
+/** === PORTFOLIO BUTTONS ======================================= **/
 
 .portfolio-btn-menu {
   display: flex;
@@ -438,7 +438,7 @@ address {
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 }
 
-/** ====================================== PORTFOLIO GALLERY ==== **/
+/** === PORTFOLIO GALLERY ======================================= **/
 
 .portfolio-list {
   display: flex;
@@ -465,11 +465,11 @@ address {
 }
 
 .portfolio-item:hover {
-  box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
-    0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
+  box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16),
+    0px 2px 1px rgba(46, 47, 66, 0.08);
 }
 
-/** ++++++++++++++++++++++++++++++++++++++ FOOTER ++++ **/
+/** +++ FOOTER +++++++++++++++++++++++++++++++++++++++ **/
 
 .footer-container {
   display: flex;
@@ -483,7 +483,7 @@ address {
   margin: 0 auto;
 }
 
-/** ====================================== FOOTER CONTENT ==== **/
+/** === FOOTER CONTENT ======================================= **/
 
 .footer-content {
   width: 264px;
@@ -498,7 +498,7 @@ address {
   margin-top: 16px;
 }
 
-/** ====================================== FOOTER CONTACTS ==== **/
+/** === FOOTER CONTACTS ======================================= **/
 
 .footer-contacts {
   width: 208px;
@@ -539,4 +539,5 @@ address {
 .footer-icon {
   width: 24px;
   height: 24px;
+  fill: var(--white);
 }
