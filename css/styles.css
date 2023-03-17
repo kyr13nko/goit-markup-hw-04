@@ -59,7 +59,6 @@ address {
 .section {
   padding-bottom: 120px;
   margin: 0 auto;
-  width: 1440px;
 }
 
 .portfolio-section {
@@ -93,8 +92,6 @@ address {
   line-height: 1.11;
   letter-spacing: 0.02em;
   text-transform: capitalize;
-
-  /* margin-bottom: 72px; */
 }
 
 .title {
@@ -103,8 +100,6 @@ address {
   font-size: 20px;
   line-height: 1.2;
   letter-spacing: 0.02em;
-
-  /* margin-bottom: 8px; */
 }
 
 .paragraph {
@@ -116,17 +111,16 @@ address {
   margin-top: 8px;
 }
 
-/* ++++ Header ++++ */
+/** ++++++++++++++++++++++++++++++++++++++ HEADER ++++ **/
 
 .page-header {
   background-color: var(--white);
   border-bottom: 1px solid var(--cornflower);
   padding: 24px 0;
   margin: 0 auto;
-  width: 1440px;
 }
 
-/* ==== Header Logo ==== */
+/** ====================================== HEADER LOGOTYPE ==== **/
 
 .logo-link {
   font-family: "Raleway", sans-serif;
@@ -146,7 +140,7 @@ address {
   color: var(--cloud);
 }
 
-/* === Header Nav ==== */
+/** ====================================== HEADER NAVIGATION ==== **/
 
 .main-menu {
   display: flex;
@@ -183,7 +177,7 @@ address {
   color: var(--ocean);
 }
 
-/* ==== Header Address ==== */
+/** ====================================== HEADER ADDRESS ==== **/
 
 .address-menu {
   display: flex;
@@ -208,9 +202,9 @@ address {
   color: var(--ocean);
 }
 
-/* ++++ Studio Main ++++ */
+/** ++++++++++++++++++++++++++++++++++++++ STUDIO MAIN ++++ **/
 
-/* ==== Studio Section Hero ==== */
+/** ====================================== STUDIO SECTION HERO ==== **/
 
 .studio-hero {
   background-color: var(--navy-blue);
@@ -219,7 +213,10 @@ address {
   width: 1440px;
   text-align: center;
 
-  background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
+  background-image: linear-gradient(
+      rgba(46, 47, 66, 0.7),
+      rgba(46, 47, 66, 0.7)
+    ),
     url("../images/hero-bg.jpg");
   background-repeat: no-repeat;
   background-position: center center;
@@ -246,7 +243,7 @@ address {
   background: var(--ocean);
 }
 
-/* ==== Studio Section 1 ==== */
+/** ====================================== STUDIO SECTION COMPONENTS ==== **/
 
 .studio-sect-one {
   padding-top: 120px;
@@ -267,10 +264,14 @@ address {
 }
 
 .svg-studio-sect-one {
-  text-align: center;
-  padding: 24px 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 264px;
+  height: 112px;
   margin-bottom: 8px;
   background-color: var(--cloud);
+  border-radius: 4px;
 }
 
 .sub-svg-studio-sect-one {
@@ -278,7 +279,7 @@ address {
   height: 64px;
 }
 
-/* ==== Studio Section 2 ==== */
+/** ====================================== STUDIO SECTION WORKS ==== **/
 
 .list-studio-sect-two {
   display: flex;
@@ -294,7 +295,7 @@ address {
   margin-left: 24px;
 }
 
-/* ==== Studio Section 3 ==== */
+/** ====================================== STUDIO SECTION OUR TEAM ==== **/
 
 .studio-sect-three {
   background-color: var(--cloud);
@@ -313,8 +314,8 @@ address {
   background-color: var(--white);
   flex-basis: calc(100% / 4 - 24px);
 
-  box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16),
-    0px 2px 1px rgba(46, 47, 66, 0.08);
+  box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
+    0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
   border-radius: 0px 0px 4px 4px;
 
   margin-left: 24px;
@@ -327,22 +328,27 @@ address {
 
 .card-list-soc {
   display: flex;
-  flex-wrap: wrap;
   justify-content: space-between;
   margin-top: 16px;
 }
 
-.card-link-soc {
-  width: 40px;
-  height: 40px;
-  background: var(--iris);
+.card-list-soc-item {
+  background-color: var(--iris);
   border-radius: 50%;
-
-  padding: 12px;
 }
 
-.card-list-soc-item {
-  flex-basis: calc(100% / 4 - 16px);
+.card-list-soc-item:hover,
+.card-list-soc-item:focus {
+  background-color: var(--ocean);
+}
+
+.card-link-soc {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  width: 40px;
+  height: 40px;
 }
 
 .card-list-icon {
@@ -350,7 +356,7 @@ address {
   height: 16px;
 }
 
-/* ++++ Studio Section 4 ++++ */
+/** ====================================== STUDIO SECTION CUSTOMERS ==== **/
 
 .customers {
   padding-top: 120px;
@@ -359,7 +365,6 @@ address {
 .customers-list {
   display: flex;
   flex-wrap: wrap;
-
   margin-top: 72px;
   margin-left: -24px;
 }
@@ -369,18 +374,32 @@ address {
   margin-left: 24px;
 }
 
-.customers-svg {
-  width: 168px;
-  height: 88px;
-  padding: 16px 32px;
+.customers-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 
   border: 1px solid var(--light-slate);
   border-radius: 4px;
+  fill: var(--light-slate);
+  width: 168px;
+  height: 88px;
 }
 
-/* ++++ Portfolio Section ++++ */
+.customers-link:hover,
+.customers-link:focus {
+  border: 1px solid var(--ocean);
+  fill: var(--ocean);
+}
 
-/* ==== Portfolio Buttons ==== */
+.customers-svg {
+  width: 104px;
+  height: 56px;
+}
+
+/** ++++++++++++++++++++++++++++++++++++++ PORTFOLIO SECTION ++++ **/
+
+/** ====================================== PORTFOLIO BUTTONS ==== **/
 
 .portfolio-btn-menu {
   display: flex;
@@ -419,7 +438,7 @@ address {
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 }
 
-/* ==== Portfolio Gallery ==== */
+/** ====================================== PORTFOLIO GALLERY ==== **/
 
 .portfolio-list {
   display: flex;
@@ -430,7 +449,7 @@ address {
 }
 
 .portfolio-item {
-  background: var(--white);
+  background-color: var(--white);
   flex-basis: calc(100% / 3 - 24px);
 
   margin-top: 48px;
@@ -446,15 +465,15 @@ address {
 }
 
 .portfolio-item:hover {
-  box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16),
-    0px 2px 1px rgba(46, 47, 66, 0.08);
+  box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
+    0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
 }
 
-/* ++++ Footer ++++ */
+/** ++++++++++++++++++++++++++++++++++++++ FOOTER ++++ **/
 
 .footer-container {
   display: flex;
-  flex-wrap: wrap;
+  gap: 120px;
 }
 
 .page-footer {
@@ -462,11 +481,12 @@ address {
   padding-top: 100px;
   padding-bottom: 100px;
   margin: 0 auto;
-  width: 1440px;
 }
 
+/** ====================================== FOOTER CONTENT ==== **/
+
 .footer-content {
-  margin-right: 120px;
+  width: 264px;
 }
 
 .footer-content-paragraph {
@@ -474,9 +494,14 @@ address {
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
-  width: 264px;
 
   margin-top: 16px;
+}
+
+/** ====================================== FOOTER CONTACTS ==== **/
+
+.footer-contacts {
+  width: 208px;
 }
 
 .footer-contacts-paragraph {
@@ -489,27 +514,26 @@ address {
 
 .footer-list {
   display: flex;
-  flex-wrap: wrap;
+  justify-content: space-between;
   margin-top: 16px;
-  margin-left: -16px;
-}
-
-.footer-link {
-  width: 40px;
-  height: 40px;
-  background: var(--slate);
-  border-radius: 50%;
-  margin-left: 16px;
-  padding: 8px;
-}
-
-.footer-link:hover,
-.footer-link:focus {
-  background: var(--green);
 }
 
 .footer-contacts-item {
-  flex-basis: calc(100% / 4 - 16px);
+  background-color: var(--slate);
+  border-radius: 50%;
+}
+
+.footer-contacts-item:hover,
+.footer-contacts-item:focus {
+  background-color: var(--green);
+}
+
+.footer-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 40px;
+  height: 40px;
 }
 
 .footer-icon {
