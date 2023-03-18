@@ -329,23 +329,21 @@ address {
   margin-top: 16px;
 }
 
-.card-list-soc-item {
-  background-color: var(--iris);
-  border-radius: 50%;
-}
-
-.card-list-soc-item:hover,
-.card-list-soc-item:focus {
-  background-color: var(--ocean);
-}
-
 .card-link-soc {
   display: flex;
   justify-content: center;
   align-items: center;
 
+  background-color: var(--iris);
+  border-radius: 50%;
+
   width: 40px;
   height: 40px;
+}
+
+.card-link-soc:hover,
+.card-link-soc:focus {
+  background-color: var(--ocean);
 }
 
 .card-list-icon {
@@ -518,22 +516,21 @@ address {
   margin-top: 16px;
 }
 
-.footer-contacts-item {
-  background-color: var(--slate);
-  border-radius: 50%;
-}
-
-.footer-contacts-item:hover,
-.footer-contacts-item:focus {
-  background-color: var(--green);
-}
-
 .footer-link {
   display: flex;
   justify-content: center;
   align-items: center;
+
+  background-color: var(--slate);
+  border-radius: 50%;
+
   width: 40px;
   height: 40px;
+}
+
+.footer-link:hover,
+.footer-link:focus {
+  background-color: var(--green);
 }
 
 .footer-icon {
